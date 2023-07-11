@@ -24,7 +24,7 @@ Install the packages in the requirements.txt file with the command:
 pip install -r requirements.txt
 ```
 
-To run the django server use the command
+To run the django server use the command, this command should create a db.sqlite3 file
 ```
 python manage.py runserver
 ```
@@ -42,6 +42,16 @@ npm run dev
 To compile while working use
 ```
 npm run watch
+```
+
+Run the command to create the migrations
+```
+
+```
+
+Run the command to apply the migrations
+```
+
 ```
 
 When the database has been created run the command seed_db to populate with initial data
