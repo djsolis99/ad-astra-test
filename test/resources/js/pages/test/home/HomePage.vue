@@ -73,7 +73,7 @@ export default {
 }
 </script>
 
-<style type="text/scss" lang="scss">
+<style lang="scss">
 @import 'resources/scss/variables.scss';
 
 .home-page {

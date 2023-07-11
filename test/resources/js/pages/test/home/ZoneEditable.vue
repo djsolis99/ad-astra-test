@@ -46,7 +46,10 @@
       </div>
 
       <div class="zone-edit-actions">
-        <button class="btn btn-secondary" @click="setDisplay(true)" :disabled="saving">
+        <button
+          class="btn btn-secondary"
+          :disabled="saving"
+        >
          Cancel
         </button>
 
@@ -124,7 +127,7 @@ export default {
 }
 </script>
 
-<style type="text/scss" lang="scss">
+<style lang="scss">
 @import 'resources/scss/variables.scss';
 
 .zone-editable {
