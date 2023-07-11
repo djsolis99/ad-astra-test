@@ -21,21 +21,22 @@
     </h1>
 
     <ul class="col-lg-6 mx-auto">
-      <li>Add the percentage symbol to each number</li>
-      <li>Fix the cancel button</li>
-      <li>Be able to edit each percentage</li>
-      <li>Be able to add more percentages</li>
-      <li>Be able to remove percentages</li>
-      <li>When the user is not able to save due some error it must be showed</li>
-      <li>The sum of all percentages must be ensured to be 100% in anyway</li>
-      <li>The percentage must be integer</li>
+      <li>Add the percentage symbol to each distribution number while is not being edited</li>
+      <li>The cancel button is not working</li>
+      <li>Without refreshing the page, be able to edit all the distributions from a zone</li>
+      <li>Be able to add more distributions</li>
+      <li>Be able to remove distributions</li>
+      <li>When the user is not able to save due to some error, the error must be showed</li>
+      <li>The sum of all distributions must be ensured to be 100% in anyway</li>
+      <li>The distributions must be integer</li>
       <li>The zone name cannot be empty</li>
       <li>The zone name cannot have more than one space between each word</li>
       <li>The zone name cannot have spaces at start or the end</li>
-      <li>Show the updated_at field value near the each zone name</li>
-      <li>Create a new field updated_at it only going to store the date when the name field change</li>
-      <li>Add an animation while the element is being saved</li>
       <li>The zone name cannot be repeated in any way</li>
+      <li>Create a new field "updated_at" that is going to store the date when the name field change</li>
+      <li>Show the updated_at field value near each zone name</li>
+      <li>Add a way for the user to know that an element is being saved</li>
+      <li>When the number of distributions is 5 or greater, the background of that zone must change to any color while is not being edited</li>
     </ul>
   </div>
 </template>
