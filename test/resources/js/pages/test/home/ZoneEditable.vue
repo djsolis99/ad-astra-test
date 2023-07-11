@@ -5,7 +5,7 @@
       class="zone-display"
     >
       <div>
-        <strong>{{ name }}</strong> {{ distributionDisplay }}
+        Zone Name: <strong>{{ name }}</strong> Distributions: {{ distributionDisplay }}
       </div>
 
       <button
@@ -20,6 +20,10 @@
       v-else
       class="zone-edit"
     >
+      <label class="control-label">
+        Zone Name
+      </label>
+
       <input
         v-model="form.name"
         placeholder="Zone name"
@@ -29,6 +33,10 @@
 
       <div class="zone-edit-distributions">
         <div v-for="distribution in form.distributions">
+          <label class="control-label">
+            Distribution
+          </label>
+
           <input
             v-model="distribution.percentage"
             placeholder="Percentage"

@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
     <h1 class="display-5 fw-bold text-center">
-      Test App
+      Zones and Distributions
     </h1>
 
     <div class="col-lg-6 mx-auto zones mb">
