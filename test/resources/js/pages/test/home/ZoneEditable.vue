@@ -155,7 +155,7 @@ export default {
   watch: {
 	updated_at: function (newVal, oldVal) {
 		this.updated_at_string = new Date(newVal);
-		this.updated_at_string = `${this.updated_at_string.getHours()}:${this.updated_at_string.getMinutes()}:${this.updated_at_string.getSeconds()} ${this.updated_at_string.getDate()}/${this.updated_at_string.getMonth()}/${this.updated_at_string.getFullYear()}`;
+		this.updated_at_string = `${this.updated_at_string.getHours()}:${(this.updated_at_string.getMinutes()<10?'0':'') + this.updated_at_string.getMinutes()}:${this.updated_at_string.getSeconds()} ${this.updated_at_string.getDate()}/${this.updated_at_string.getMonth()}/${this.updated_at_string.getFullYear()}`;
 	},
 	saving: function (newVal, oldVal) {
 
@@ -225,7 +225,7 @@ export default {
     },
 	setAndFormatUpdatedAtDate() {
 		this.updated_at_string = new Date(this.updated_at);
-		this.updated_at_string = `${this.updated_at_string.getHours()}:${this.updated_at_string.getMinutes()}:${this.updated_at_string.getSeconds()} ${this.updated_at_string.getDate()}/${this.updated_at_string.getMonth()}/${this.updated_at_string.getFullYear()}`;
+		this.updated_at_string = `${this.updated_at_string.getHours()}:${(this.updated_at_string.getMinutes()<10?'0':'') + this.updated_at_string.getMinutes()}:${this.updated_at_string.getSeconds()} ${this.updated_at_string.getDate()}/${this.updated_at_string.getMonth()}/${this.updated_at_string.getFullYear()}`;
 	},
     setDisplayEdit(value) {
       this.display = value;
