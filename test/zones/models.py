@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import datetime
 
 
 class Distribution(models.Model):
@@ -10,7 +11,8 @@ class Distribution(models.Model):
 
 
 class Zone(models.Model):
-    name = models.CharField(max_length=200)
+    name = models.CharField(max_length=200, unique=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.name

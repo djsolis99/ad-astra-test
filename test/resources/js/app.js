@@ -1,9 +1,12 @@
 import '../scss/app.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'alertifyjs/build/css/alertify.min.css';
 
+import alertifyjs from 'alertifyjs';
 import Axios from 'axios';
 import Vue from 'vue';
 
+window.alertify = alertifyjs;
 
 window.axios = Axios;
 
